@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_srcreen_style"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity">
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xz"
+        android:enabled="false"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="213dp"
+
+        android:text="Answer"
+        android:textColor="#01dcec"
+        android:textSize="15dp"
+        tools:ignore="NotSibling" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/rel"
+        android:layout_marginLeft="20dp"
+        android:elevation="100dp"
+        android:layout_marginRight="20dp"
+        android:background="#308ab4"
+        android:layout_marginTop="12dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#16a0ef"
+
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+
+                android:paddingTop="22dp"
+                android:textStyle="bold"
+                android:textColor="#e3eaf4"
+                android:textSize="16dp"
+                android:background="#16a0ef"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardAnswer"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="100dp"
+        android:layout_marginRight="20dp"
+        android:background="#308ab4"
+        android:layout_marginTop="270dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txtAnswer"
+                android:layout_width="match_parent"
+                android:paddingLeft="12dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:textColor="#e3eaf4"
+                android:textSize="15dp"
+                android:background="#16a0ef"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        android:background="#308ab4"
+        android:elevation="100dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/xz"
+            android:layout_height="wrap_content"
+           >
+
+
+            <EditText
+                android:id="@+id/edAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#094c73"
+                android:hint="Enter Answer here"
+                android:padding="10dp"
+                android:paddingLeft="12dp"
+                android:textColor="#01dcec"
+
+                android:textColorHint="#a4cccf"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+
+
+        android:onClick="send"
+        android:text="send answer"
+        android:textColor="#01dcec"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_style2"
+    tools:context=".QueryActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/edChooseRoot"
+            android:ems="10"
+            android:hint=" enter subject name"
+            android:inputType="text"
+            android:textColor="#c6f2e7"
+            android:paddingLeft="14dp"
+            android:textColorHint="#4b8785"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/edDetial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/edSubject"
+            android:hint=" write your proplem"
+            android:inputType="textMultiLine"
+            android:paddingLeft="14dp"
+            android:textColor="#53dddf"
+            android:textColorHint="#4b8785"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/customList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liner"
+                android:layout_alignStart="@+id/liner"
+                android:layout_marginTop="15dp"
+                android:focusedByDefault="true"
+                android:divider="#cae9e4"
+                android:dividerHeight="1dp"
+                android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edChooseRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/liner"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+
+            android:ems="10"
+            android:enabled="false"
+            android:hint=" You Must Select the type of question"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textColor="#e20896"
+            android:textColorHint="#6b6e6e"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edChooseItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/edChooseRoot"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="-43dp"
+            android:layout_marginEnd="28dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint=" You must Select Enquiry Category"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#e20896"
+            android:textColorHint="#6b6e6e"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnSendQuery"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edDetial"
+            android:layout_marginTop="24dp"
+            android:onClick="sendQuery"
+            android:text="send"
+            android:textColor="#5de9e4"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

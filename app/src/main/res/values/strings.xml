@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">askMe</string>
+    <string name="facebook_app_id">984459345070888</string>
+    <string name="fb_login_protocol_scheme">fb984459345070888</string>
+
+</resources>
